@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndiaMART Search</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/search_product.css">
+</head>
+
+<body>
+    <div class="main">
+        <!-- Navigation Bar -->
+        <header class="navigation_bar" id="header">
+            <div class="nav_upper">
+                <div class="indiamart_logo_container">
+                    <a href="#" class="indiamart_logo">
+                        <img src="../images/indiamart_logo.png" alt="indiamart_logo">
+                    </a>
+                </div>
+                <div class="search_container">
+                    <form id="search-form">
+                        <input type="text" class="search_input" placeholder="Enter product/service to search" id="searchbar">
+                        <button type="button" class="search_button" id="voice-search">
+                            <i class="fa-solid fa-microphone"></i>
+                        </button>
+                        <button type="submit" class="search_button" id="submit-search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="navigation_links_container">
+                    <ul class="navigation_links">
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Sell</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Message</a></li>
+                    </ul>
+                </div>
+                <div class="signup_login_container">
+                    <button class="signup_login">SignUp/SignIn</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Search Result Header -->
+        <div class="search-header">
+            <div class="search-title">
+                rice <span>(16 results)</span>
+            </div>
+            <div class="search-location">
+                <div class="location-controls">
+                    <div class="location-input-group">
+                        <i class="fa-solid fa-location-dot" style="color:black;"></i>
+                        <input type="text" placeholder="Location" value="unfortunately">
+                    </div>
+                    <button class="near-me-btn">
+                        <i class="fa-solid fa-location-arrow"></i> Near Me
+                    </button>
+                </div>
+                <div class="city-filters">
+                    <span>All India</span>
+                    <span>Indore</span>
+                    <span>Delhi</span>
+                    <span>Chennai</span>
+                    <span>Hyderabad</span>
+                    <span>bengaluru</span>
+                    <span>Mumbai</span>
+                    <span>Pune</span>
+                    <span>Ahmedabad</span>
+                    <span>Kolkata</span>
+                </div>
+            </div>
+        </div>
+
+        <div class ="body-container" id="upper">
+            <h3>What type of product you are looking for?</h3>
+            <div class="content-row">
+                <div class ="right-box" id="product-grid">
+                </div>
+                <div class="left-cont">
+                    <div class ="left" id="left">
+                        <div class="related">
+                            <h2>Related Category</h2>
+                        </div>
+
+                        <li> Rice</li>
+                        <li>Organic Black Rice</li>
+                        <li>Puffed Rice</li>
+                        <li>Sona Masoori Rice</li>
+                        <li>1121 Basmati Rice</li>
+                        <li>Ponni Rice</li>
+                        <li>Steamed Rice</li>
+                        <li>Brown Basmati Rice</li>
+                        <li>Golden Sella Basmati Rice</li>
+                        <li>Idli Rice</li>
+                        <li>Poha</li>
+                        <li>White Sella Basmati Rice</li>
+                        <li>Bamboo Rice</li>
+                        <li>Indrayani Rice</li>
+                        <li>Tibar Basmati Rice</li>
+                        <li>Parboiled Basmati Rice</li>
+                        <li>Organic Basmati Rice</li>
+                        <li>Swarna Rice</li>
+                        <li>Dubar Basmati Rice</li>
+                        <li>Sharbati Rice</li>
+                        <li>IR-64 Rice</li>
+                        <li>BPT Rice</li>
+                        <li>Pusa Rice</li>
+                        <li>Jasmine Rice</li>
+                        <li>Samba Rice</li>
+                        <li>HMT Rice</li>
+                        <li>armal Rice</li>
+                        <li>Biryani Rice</li>
+                        <li>Indian Sella Rice</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../data/data.js"></script>
+    <script src="../js/search_product.js"></script>
+</body>
+
+</html>

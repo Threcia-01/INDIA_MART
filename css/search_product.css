@@ -1,0 +1,310 @@
+:root {
+    --primary: #2E3B55;
+    --dark: #1F2A44;
+    --light: #F5F7FA;
+    --accent: #FF6F61;
+    --muted: #7F8C8D;
+    --text: #2C3E50;
+    --background: #FFFFFF;
+    --font: Arial, Helvetica, sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: var(--font);
+    background-color: var(--background);
+    color: var(--text);
+}
+
+/*================== Navigation Bar ==================*/
+.navigation_bar {
+    background-color: var(--primary);
+}
+
+.nav_upper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    height: 10vh;
+}
+
+.indiamart_logo img {
+    height: 3em;
+    object-fit: contain;
+}
+
+.search_container {
+    flex: 1;
+    max-width: 500px;
+    margin: 0 2rem;
+}
+
+.search_container form {
+    display: flex;
+    align-items: center;
+    background-color: var(--light);
+    border-radius: 5px;
+    padding: 0.3em 0.6em;
+    width: 100%;
+}
+
+.search_input {
+    flex: 1;
+    padding: 0.5em;
+    border: none;
+    font-size: 1em;
+    outline: none;
+}
+
+.search_button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--primary);
+    font-size: 1.1em;
+    margin-left: 0.5rem;
+}
+
+.navigation_links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.navigation_links a {
+    color: var(--light);
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.2s ease-in-out;
+}
+
+.navigation_links a:hover {
+    color: #ccc;
+}
+
+.signup_login_container {
+    margin-left: auto;
+}
+
+.signup_login {
+    background-color: var(--accent);
+    color: var(--light);
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signup_login:hover {
+    background-color: #e04d3b;
+}
+
+/*================== Search Header ==================*/
+.search-header {
+    background-color: #eee;
+    padding: 1rem;
+    margin: 1.5rem auto 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 95%;
+}
+
+.search-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.search-title span {
+    font-size: 1.1rem;
+    color: var(--muted);
+}
+
+.search-location {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.location-controls {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.location-input-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #fff;
+    padding: 0.4em 0.6em;
+    border: 1px solid var(--muted);
+    border-radius: 6px;
+}
+
+.location-input-group input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1em;
+}
+
+.near-me-btn {
+    background-color: var(--primary);
+    color: var(--light);
+    border: none;
+    padding: 0.5em 0.9em;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.city-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.5em;
+    font-size: 0.95em;
+    color: var(--dark);
+}
+
+/*================== Product Search Section ==================*/
+.body-container {
+    width: 95%;
+    margin: 2rem auto;
+}
+
+.body-container > h3 {
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    display:block;
+}
+
+.content-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.left-cont {
+    flex: 1 1 25%;
+    min-width: 200px;
+}
+
+.right-box {
+    flex: 3 1 75%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    align-items: stretch;
+}
+
+.vr {
+    display:flex;
+    flex-direction: column;
+    margin-top: auto;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.5rem;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.vr img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+.vr button {
+    margin-top: auto;
+    width:100%; 
+    bottom: 10px;  
+    padding: 8px 16px; 
+    border: none; 
+    border-radius: 5px; 
+    background-color:var(--accent); 
+    color: white; 
+    cursor: pointer;
+}
+
+.vr:hover {
+    border: 2px solid var(--muted);
+    background-color: #f8f8f8;
+}
+
+.vr p{
+    margin-bottom: 0.5rem;
+}
+
+.vr product_dis { 
+  margin-bottom: 0.5rem;
+}
+/*================== Sidebar + Results Grid ==================*/
+
+
+.left {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.related h2 {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: var(--primary);
+}
+
+.left li {
+    list-style: none;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text);
+    cursor: pointer;
+}
+
+.left li:hover {
+    text-decoration: underline;
+}
+
+/*================== Responsive ==================*/
+@media (max-width: 768px) {
+    .nav_upper {
+        flex-direction: column;
+        gap: 1rem;
+        height: auto;
+        align-items: flex-start;
+    }
+
+    .search_container {
+        width: 100%;
+        max-width: none;
+    }
+
+    .navigation_links {
+        flex-wrap: wrap;
+    }
+
+    .upper-boxes {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+}
