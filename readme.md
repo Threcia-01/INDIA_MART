@@ -1,71 +1,100 @@
-🇮🇳 INDIAmart Clone (Modern UI)
-================================
+# 🇮🇳 INDIAmart Clone (Modern UI)
 
-A modern and responsive clone of the INDIAmart website, featuring a clean homepage and a search results page. This project uses HTML, CSS, and JavaScript to mimic key functionalities of the platform.
+A modern and responsive clone of the INDIAmart website, featuring a clean homepage, product search, cart flow, and a simulated checkout. This project uses **HTML, CSS, and JavaScript** to mimic key functionalities of the platform.
 
-🚀 How to Run the Project
--------------------------
+---
 
-Follow these simple steps to get started:
+## 🚀 How to Run the Project
 
-Step 1: Download the Project
-- Clone or download this repository to your local machine.
+### Step 1: Download the Project
+- Clone or download this repository to your local machine.  
 - Open the folder using VS Code or any preferred code editor.
 
-Step 2: Launch the Homepage
+### Step 2: Launch the Homepage
 - Open the `index.html` file using any modern browser (Chrome, Firefox, Edge, etc.).
 
-Step 3: Explore the Homepage Features
+### Step 3: Explore the Homepage Features
 - Scroll through the homepage to interact with:
-  - My Orders
-  - My Messages
-  - Call Log
-  - Requirement Form: Submit your product requirement and phone number (for demonstration purposes only; data isn't stored).
+  - **My Orders**
+  - **My Messages**
+  - **Call Log**
+  - **Requirement Form**: Submit your product requirement and phone number (demo only).
 
-Step 4: Use the Search Function
-- In the search bar, type "rice" and press Enter.
-- This will navigate to the `search_product.html` page showing different rice product listings.
-- You can browse and simulate adding items to the cart.
+### Step 4: Search Products
+- In the search bar, type **"rice"** and press Enter.  
+- This navigates to the `html/search_product.html` page showing rice product listings.  
+- Each product card includes:
+  - Image  
+  - Name  
+  - Price  
+  - Short description  
+  - **Add to Cart / Contact Supplier** button  
 
-Step 5: Cart Functionality
-- Currently, clicking "Add to Cart" will display a placeholder message:
-  "This is add to card, which is yet to be developed."
-  (This feature is still under construction.)
+### Step 5: Cart Page
+- Clicking **Add to Cart** takes you to the `html/cart.html` page.  
+- From here, you can proceed to checkout.
 
-📌 Features Implemented
------------------------
+### Step 6: Buy Form & Thank You Page
+- On checkout, a simple **Buy Form** appears (`html/user_input_page.html`).  
+- After submitting, you are shown a **Thank You message** 🎉  
+- The page also provides a **link to return to Home Page**.
 
-- Modern responsive UI design
-- Product search simulation
-- Requirement form
-- Basic page navigation and structure using HTML/CSS/JS
+### Step 7: User Authentication (Prototype)
+- A basic **Sign Up / Sign In page** is available (`html/signup_signin.html`).  
+- Clicking the **Login button** currently simulates login with an alert:  
+  *"Successfully logged in"* and redirects you back to the homepage.
 
-🛠️ Planned Features (Coming Soon)
----------------------------------
+---
 
-- User registration and login pages
-- Cart functionality with quantity management
-- Product detail pages
+## 📌 Features Implemented
+
+- Modern **responsive UI design**
+- **Search simulation** with "rice"
+- **Product listing grid** with add-to-cart button
+- **Cart flow** (`cart.html`) with checkout
+- **Buy form** with Thank You confirmation page
+- **Requirement form** on homepage
+- **Basic Sign Up / Sign In page**
+- Page navigation with smooth redirects
+
+---
+
+## 🛠️ Planned Features (Coming Soon)
+
+- Persistent cart system with localStorage
+- User authentication with proper validation
+- Product detail pages with more info
 - Payment gateway simulation
-- Mobile-first design improvements
+- Full **mobile-first redesign** for better UX
 
-🧑‍💻 Developer Notes
----------------------
+---
 
-> This project is under active development and currently serves as a front-end prototype. Backend and data storage integration are not yet implemented.
-
-📂 Folder Structure
--------------------
+## 📂 Folder Structure
 
 project-folder/
 │
-├── index.html               # Homepage
-├── search_product.html      # Search results page
-├── /css                     # Stylesheets
-├── /js                      # JavaScript files
-└── README.txt               # Project instructions
-
-📬 Feedback or Suggestions?
----------------------------
-
-Open to collaboration and feedback. Feel free to fork, raise issues, or contribute!
+├── index.html # Homepage
+├── readme.md # Project instructions
+│
+├── /css # Stylesheets
+│ ├── cart.css
+│ ├── home.css
+│ ├── search_product.css
+│ └── signup_signin.css
+│
+├── /data # Data files
+│ └── data.js
+│
+├── /html # Additional pages
+│ ├── cart.html
+│ ├── search_product.html
+│ ├── signup_signin.html
+│ └── user_input_page.html
+│
+├── /images # Images and assets
+│
+├── /js # JavaScript files
+│ ├── cart.js
+│ ├── home.js
+│ ├── search_product.js
+│ └── signup_signin.js
