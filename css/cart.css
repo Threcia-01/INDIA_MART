@@ -1,0 +1,144 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f9fa;
+}
+
+.container {
+  display: flex;
+  max-width: 1000px;
+  margin: 30px auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Left Panel */
+.info-box {
+  flex: 1;
+  background: #0056b3; /* Replace with your palette’s primary */
+  color: #fff;
+  padding: 20px;
+}
+
+.info-box h3 {
+  margin-top: 0;
+}
+
+.info-box ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.info-box ul li {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+/* Right Form */
+.form-box {
+  flex: 2;
+  padding: 25px;
+}
+
+.form-box h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: bold;
+  color: #444;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  outline: none;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #0056b3; /* Palette highlight */
+}
+
+.checkbox-group, .radio-group {
+  margin: 10px 0;
+}
+
+.checkbox-group label, 
+.radio-group label {
+  display: inline-block;
+  margin-right: 15px;
+  font-weight: normal;
+}
+
+.button-group {
+  margin-top: 20px;
+}
+
+.button-group button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.btn-primary {
+  background: #0056b3; /* Primary */
+  color: #fff;
+}
+
+.btn-secondary {
+  background: #ccc;
+  color: #000;
+}
+
+.btn-primary:hover {
+  background: #003d80;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+
+.thank-you {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.thank-you h2 {
+  color: #0056b3; /* Your palette’s primary */
+  margin-bottom: 15px;
+}
+
+.thank-you p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.btn-home {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #0056b3; /* Primary */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.btn-home:hover {
+  background: #003d80;
+}

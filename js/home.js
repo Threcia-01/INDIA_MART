@@ -1,5 +1,13 @@
 // js/home.js
 
+// ========== SignUp / SignIn Button ==========
+const signupLoginBtn = document.getElementById('signup-login-button');
+if (signupLoginBtn) {
+  signupLoginBtn.addEventListener('click', () => {
+    window.location.href = "/html/signup_signin.html";  
+  });
+}
+
 // ========== Search Form ==========
 const searchForm = document.getElementById('search-form');
 const voiceBtn   = document.getElementById('voice-search');

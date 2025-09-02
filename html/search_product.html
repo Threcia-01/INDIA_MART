@@ -16,7 +16,7 @@
         <header class="navigation_bar" id="header">
             <div class="nav_upper">
                 <div class="indiamart_logo_container">
-                    <a href="#" class="indiamart_logo">
+                    <a href="/" class="indiamart_logo">
                         <img src="../images/indiamart_logo.png" alt="indiamart_logo">
                     </a>
                 </div>
@@ -39,8 +39,8 @@
                         <li><a href="#">Message</a></li>
                     </ul>
                 </div>
-                <div class="signup_login_container">
-                    <button class="signup_login">SignUp/SignIn</button>
+                <div class="signup_login_container" id="signup-login-container">
+                    <button class="signup_login" id="signup-login-button">SignUp/SignIn</button>
                 </div>
             </div>
         </header>
@@ -54,24 +54,27 @@
                 <div class="location-controls">
                     <div class="location-input-group">
                         <i class="fa-solid fa-location-dot" style="color:black;"></i>
-                        <input type="text" placeholder="Location" value="unfortunately">
+                        <input type="text" placeholder="Location" value="">
                     </div>
                     <button class="near-me-btn">
                         <i class="fa-solid fa-location-arrow"></i> Near Me
                     </button>
                 </div>
-                <div class="city-filters">
-                    <span>All India</span>
-                    <span>Indore</span>
-                    <span>Delhi</span>
-                    <span>Chennai</span>
-                    <span>Hyderabad</span>
-                    <span>bengaluru</span>
-                    <span>Mumbai</span>
-                    <span>Pune</span>
-                    <span>Ahmedabad</span>
-                    <span>Kolkata</span>
-                </div>
+                <form>
+                    <label for="city">Select City:</label>
+                    <select id="city" name="city">
+                        <option value="all">All India</option>
+                        <option value="indore">Indore</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="chennai">Chennai</option>
+                        <option value="hyderabad">Hyderabad</option>
+                        <option value="bengaluru">Bengaluru</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="pune">Pune</option>
+                        <option value="ahmedabad">Ahmedabad</option>
+                        <option value="kolkata">Kolkata</option>
+                    </select>
+                </form>
             </div>
         </div>
 

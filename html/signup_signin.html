@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="../css/signup_signin.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Left login form -->
+    <div class="form-box">
+      <h2>Log in</h2>
+      <p>Don't have an account? <a href="#">Sign up</a></p>
+
+      <div class="input-group">
+        <label for="phone">Phone No</label>
+        <input type="text" id="phone" placeholder="Enter your Phone no">
+      </div>
+
+      <div class="input-group password-box">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Create your password">
+        <span class="toggle-password" onclick="togglePassword()">👁️</span>
+      </div>
+
+      <button class="btn" id ="login-button">Log in</button>
+    </div>
+
+    <!-- Right illustration -->
+    <div class="image-box">
+      <img src="../images/login-illustration.png" alt="Login Illustration">
+    </div>
+  </div>
+
+  <script src="../js/signup_signin.js" defer ></script>
+</body>
+</html>
